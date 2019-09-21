@@ -2,10 +2,31 @@
 //
 
 #include <iostream>
+#include <random>
+#include <time.h>
+#include "AAquarium.h"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	srand(time(NULL));
+	AAquarium* aquarium = new AAquarium();
+	for (int i = 0; i < 10; i++)
+	{
+		aquarium->AjouterPoisson(new Merou("Merou_" + std::to_string(i), rand() % 2));
+		aquarium->AjouterAlgue(new Algue());
+	}
+
+	aquarium->AfficherAquarium();
+
+	int i = 0;
+	while (aquarium->GetTPoissonSize() > 1)
+	{
+		aquarium->PasserTemps();
+		aquarium->AfficherAquarium();
+		i++;
+	}
+
+	std::cout << i;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -18,5 +18,25 @@
     <ClCompile Include="Aquarium.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AAquarium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Predateur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Proie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AAquarium.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Predateur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Proie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
