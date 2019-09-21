@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <vector>
 #include "Predateur.h"
 #include "Proie.h"
 
@@ -12,11 +14,11 @@ class AAquarium
 public:
 	AAquarium();
 	~AAquarium();
-	/*
+	void AfficherAquarium();
 	void PasserTemps();
+	/*
 	void AjouterPredateur(Predateur* poisson);
 	void AjouterProie(Proie* algue);
-	void AfficherAquarium();
 	int GetTPoissonSize();
 private:
 	void PoissonPasNourri(OUT TPredateur* T_);

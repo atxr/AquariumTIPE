@@ -10,17 +10,17 @@ int main()
 {
 	srand(time(NULL));
 	AAquarium* aquarium = new AAquarium();
-	for (int i = 0; i < 10; i++)
+	/*for (int i = 0; i < 10; i++)
 	{
 		aquarium->AjouterPoisson(new Merou("Merou_" + std::to_string(i), rand() % 2));
 		aquarium->AjouterAlgue(new Algue());
-	}
+	}*/
 
 	aquarium->AfficherAquarium();
 
 	int i = 0;
-	while (aquarium->GetTPoissonSize() > 1)
-	{
+	while (i<100)
+	{	
 		aquarium->PasserTemps();
 		aquarium->AfficherAquarium();
 		i++;
